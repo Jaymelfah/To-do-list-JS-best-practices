@@ -36,12 +36,12 @@ export default class Todolist {
       });
     });
 
-    for (let i = 0; i < ellipsis.length; i += 1) {
-      ellipsis[i].addEventListener('click', () => {
-        removeItem[i].style.display = 'inline';
-        ellipsis[i].style.display = 'none';
+    ellipsis.forEach((item) => { 
+      item.addEventListener('click', () => {
+        removeItem[item].style.display = 'inline';
+        item.style.display = 'none';
       });
-    }
+    });
     // To check whether a box has been checked
     checkBox.forEach((check, index) => {
       check.addEventListener('change', (event) => {
