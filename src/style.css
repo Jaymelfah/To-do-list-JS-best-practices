@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: fit-content;
+  min-width: 50%;
+  margin-inline: auto;
+  background-color: #fff;
+  box-shadow: 1px -3px 5px 0 rgba(0, 0, 0, 0.52);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  height: 100%;
+}
+
+.heading,
+.input-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+}
+
+.list-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+}
+
+.todolist {
+  padding-left: 0%;
+}
+
+.task {
+  margin-left: 5px;
+}
+
+.clear {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(128, 128, 128, 0.112);
+}
+
+.clr-btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgba(128, 128, 128, 0.92);
+}
+
+.clr-btn:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.input-text {
+  border: none;
+  background-color: transparent;
+  width: 90%;
+}
+
+.input-text:focus {
+  outline: none;
+}
+
+i {
+  color: rgba(128, 128, 128, 0.92);
+  cursor: pointer;
+}
+
+#ellipsis {
+  cursor: move;
+  display: inline;
+}
+
+.backyellow {
+  background-color: rgba(255, 217, 0, 0.169);
+}
+
+.inline {
+  display: inline;
+}
+
+.fa-trash-can {
+  display: none;
+}
+
+.fa-trash-can:hover {
+  color: red;
+}
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  color: green;
+}
+
+.checkbox:checked::before {
+  background-color: green;
+}
+
+.fa-ellipsis-vertical {
+  cursor: move;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.to-do {
+  text-decoration: none;
+  display: inline;
+}
+
+.fa-rotate {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+#enter-key {
+  transition: 0.4s ease-in-out;
+}
+
+#enter-key:hover {
+  color: green;
+  font-size: 20px;
+}
